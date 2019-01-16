@@ -33,7 +33,7 @@ doc/**/*.pdf
 # IGNORE:   "*.filename_ending"
 *~
 .env
-.pem
+*.pem
 scratch.txt
 
 # ignore filenames in ANY directory starting with (.)
