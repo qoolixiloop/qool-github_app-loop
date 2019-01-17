@@ -24,7 +24,7 @@ To run the code, make sure you have [Bundler](http://gembundler.com/) installed;
 --------
 --------
 
-# Building GuitHubApp tutghapp-set-up-yr-dev-env with Ruby containing GitHub WebHooks
+# Using github-app-template: Building my own GitHub App "tutghapp-set-up-yr-dev-env" with Ruby containing GitHub WebHooks
 
 The steps below are a summary of this tutorial:
 
@@ -95,26 +95,32 @@ Go to:
 
     https://github.com/settings/apps/tutghapp-set-up-yr-dev-env  
     
-Click button to generate private key which returns:
+Click button to generate private key which returns:  
+
 a file containing RSA key: 
-* tutghapp-set-up-yr-dev-env.2019-01-15.private-key.pem
-and a response on website: app ID GitHub has assigned to app
-* Owned by: @qoolixiloop
-* ID: ididid
+* tutghapp-set-up-yr-dev-env.2019-01-15.private-key.pem  
+
+and a response on website: app ID GitHub has assigned to app  
+* Owned by: @qoolixiloop  
+* ID: ididid  
 
 ## add file .env
-Copy/paste the following information into file .env
+Copy/paste the following information into file .env.  
+
 rsa key: 
-    from the file: ...private-key.pem
-ID:
-    ididid
-webhooksecret:
-    xxxxxxxxxxxxxx
+    from the file: ...private-key.pem  
+
+ID:  
+    ididid   
+
+webhooksecret: 
+    xxxxxxxxxxxxxx   
 
 ## Open template_server.rb
 Try to understand the template code.
 
 ## Try to run Sinatra web server
+
     $ ruby template_server.rb  
     
 if you get following message: 
@@ -122,7 +128,7 @@ if you get following message:
 * it's because your are running on Ubuntu's system Ruby installation.
 * Don't mess around there, just install a new version in your $HOME, by following the steps below.
 
-## install a local version of ruby in $HOME:
+## Install a local version of ruby in $HOME:
 ### Install dependencies
 
     $ cd $Home   
@@ -176,11 +182,11 @@ Install gems:
 
     $ bundle install  
 
-## run Sinatra web server
+## Run Sinatra web server
  
     $ ruby template_server.rb  
 
-## install app on github account
+## Install app on github account
 
     https://github.com/settings/apps/tutghapp-set-up-yr-dev-env/installations
 
